@@ -1,0 +1,117 @@
+$banner_blogdetail:url(../../img/backgrounds/kenniscentrum-detail.jpg);
+$black:#000000;
+$white:#ffffff;
+$offwhite:#f2f0eb;
+$grey:#6f6f6f;
+$dark_grey:#333333;
+$light_grey:#666666;
+$blue:#0089c4;
+
+$banner_heading:$white;
+$banner_text:$white;
+$blog_text:$grey;
+$link_color:$black;
+$link_color_hover:$blue;
+
+
+#blogdetail-head {
+  margin-top: 0px; }
+  
+  #blogdetail-head .head {
+  	position:relative;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.05) 100%), $banner_blogdetail top center no-repeat; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.05))), $banner_blogdetail top center no-repeat; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.05) 100%), $banner_blogdetail top center no-repeat;/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.05) 100%), $banner_blogdetail top center no-repeat; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.05) 100%), $banner_blogdetail top center no-repeat; /* IE10+ */
+	background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.05) 100%), $banner_blogdetail top center no-repeat; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#40000000',GradientType=1 ); /* IE6-9 */
+    display: block;
+    padding-top: 150px;
+    height: 422px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+	
+		#blogdetail-head .head .line {
+			margin-left: 0; }
+		  
+	#blogdetail-head h1 {
+		margin:0px 0 5px 0;
+		padding:0;
+		color: $banner_heading;
+		font-size: 60px;
+		font-weight:600;
+		line-height: 68px; }
+			
+	#blogdetail-head h3 {
+		color:$banner_heading; 
+		font-size:25px;
+		margin-top:0px;  }
+		
+#blogdetail {
+	padding-top:60px;
+	background:$offwhite;
+	padding-bottom:60px; }
+	
+	#blogdetail h3 {
+		font-size:18px;
+		font-weight:normal;
+		line-height:26px;
+		margin-bottom:40px; }
+	#blogdetail h4 {
+		font-size:18px;
+		line-height:28px; }
+	#blogdetail p {
+		font-size:16px;
+		color:$blog_text;
+		line-height:23px;
+		margin-bottom:30px; }
+	#blogdetail ul {
+		list-style-type:none;
+		padding:0;
+		margin:0;
+		margin-top:50px;}
+		#blogdetail ul li {
+			float:left;
+			margin-right:20px;	}
+			#blogdetail li a {
+				display:block;
+				background:url(../../img/social_big.png) no-repeat;
+				background-position:0px 0px;
+				width:25px;
+				height:25px; }
+			#blogdetail li a.fb {
+				background-position:0px 0px; }
+			#blogdetail li a.twitter {
+				background-position:-50px 0px; }
+			#blogdetail li a.gplus {
+				background-position:-108px 0px; }
+			#blogdetail li a.linkedin {
+				background-position:-170px 0px; }
+			#blogdetail li a.pinterest {
+				background-position:-230px 0px; }
+	
+	
+/* Responsive
+-------------------------------------------------- */
+@media (max-width: 767px) {
+	#blogdetail-head h1 {
+		margin:0px 0 5px 0;
+		padding:0;
+		color: $banner_heading;
+		font-size: 50px;
+		font-weight:600;
+		line-height: 58px; }
+}
+@media (max-width: 480px) {
+	#blogdetail-head h1 {
+		margin:0px 0 5px 0;
+		padding:0;
+		color: $banner_heading;
+		font-size: 40px;
+		font-weight:600;
+		line-height: 48px; }
+}
