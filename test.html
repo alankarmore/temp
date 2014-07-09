@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style type="text/css">
+    html.no-message #message{ display:none; }
+ </style>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script type="text/javascript">
+     /*// Bad
+     jQuery(document).ready(function($){
+        $('#message').hide();
+     });*/
+     
+     // Correct
+     jQuery('html').addClass('no-message');
+    /* // or...
+     document.documentElement.className = 'no-message';
+     */
+ </script>
+</head>
+<body>
+    <p id="message">I should not be visible</p>
+    <p>something is here </p>
+    <!--
+      Many more html elements
+    -->
+</body>
+</html>
